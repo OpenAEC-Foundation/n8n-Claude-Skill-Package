@@ -1,7 +1,7 @@
 # ROADMAP
 
-## Current Phase: Phase 7 — Publication
-## Overall Progress: 21/21 skills (100%)
+## Current Phase: COMPLETE
+## Overall Progress: 21/21 skills (100%) — Published
 
 ---
 
@@ -15,7 +15,7 @@
 | 4 | Topic-Specific Research | MERGED INTO PHASE 5 | — |
 | 5 | Skill Creation | COMPLETE (100%) | 21/21 |
 | 6 | Validation | COMPLETE (100%) | — |
-| 7 | Publication | IN PROGRESS | — |
+| 7 | Publication | COMPLETE (100%) | — |
 
 ---
 
@@ -67,14 +67,11 @@
 | 2026-03-19 | Phase 3 complete — refined to 21 definitive skills, 7 batches |
 | 2026-03-19 | Phase 5 complete — all 21 skills created across 7 batches |
 | 2026-03-19 | Phase 6 complete — structural validation passed |
-| 2026-03-19 | Phase 7 — INDEX.md, README.md updated, preparing publication |
+| 2026-03-19 | Phase 7 complete — published to GitHub with v1.0.0 release, social preview, topics |
 
 ---
 
-## Next Steps
+## Project Complete
 
-1. Commit all changes
-2. Create GitHub repository under OpenAEC Foundation
-3. Push to remote
-4. Create release tag v1.0.0
-5. Set repository topics
+Repository: https://github.com/OpenAEC-Foundation/n8n-Claude-Skill-Package
+Release: https://github.com/OpenAEC-Foundation/n8n-Claude-Skill-Package/releases/tag/v1.0.0
