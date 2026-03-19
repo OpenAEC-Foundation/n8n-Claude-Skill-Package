@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Preview Banner — n8n Skill Package</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #2A2A32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .banner {
+    width: 1280px;
+    height: 640px;
+    background: #2A2A32;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+
+  /* n8n gradient top strip */
+  .top-strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #EA4B71 0%, #FF6D5A 35%, #FF9F43 70%, #EA4B71 100%);
+  }
+
+  /* Subtle blueprint grid */
+  .banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(250,250,249,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(250,250,249,0.02) 1px, transparent 1px);
+    background-size: 30px 30px;
+    pointer-events: none;
+  }
+
+  /* Left content */
+  .left {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    padding: 72px 40px 56px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .number {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    color: #FAFAF9;
+    line-height: 0.85;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #EA4B71;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+
+  .subtitle {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 17px;
+    color: #A1A1AA;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  /* Technology badges — ghost style per brand */
+  .badges {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-family: 'Inter', system-ui, sans-serif;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid;
+  }
+
+  .badge-n8n        { border-color: #EA4B71; color: #EA4B71; }
+  .badge-typescript  { border-color: #3178C6; color: #3178C6; }
+  .badge-json        { border-color: #FF9F43; color: #FF9F43; }
+
+  .versions {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    color: #A1A1AA;
+    letter-spacing: 0.05em;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .versions .sep {
+    color: #36363E;
+  }
+
+  /* Right code window */
+  .right {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    padding: 56px 56px 56px 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .code-window {
+    width: 100%;
+    background: rgba(54, 54, 62, 0.8);
+    border: 1px solid rgba(250,250,249,0.06);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+    max-height: 100%;
+  }
+
+  .code-window * {
+    overflow: hidden;
+  }
+
+  .code-titlebar {
+    background: rgba(42, 42, 50, 0.95);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(250,250,249,0.04);
+  }
+
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .dot-red    { background: #DC2626; }
+  .dot-yellow { background: #F59E0B; }
+  .dot-green  { background: #16A34A; }
+
+  .code-filename {
+    color: #A1A1AA;
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .code-body {
+    padding: 20px 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #FAFAF9;
+  }
+
+  .comment  { color: #A1A1AA; }
+  .keyword  { color: #EA4B71; }
+  .function { color: #FF6D5A; }
+  .string   { color: #34D399; }
+  .operator { color: #FF9F43; }
+  .type     { color: #3178C6; }
+  .iface    { color: #7DD3FC; }
+  .prop     { color: #FAFAF9; }
+  .cursor {
+    display: inline-block;
+    width: 8px;
+    height: 17px;
+    background: #EA4B71;
+    vertical-align: text-bottom;
+  }
+
+  /* Foundation branding bottom-right */
+  .foundation {
+    position: absolute;
+    bottom: 28px;
+    right: 44px;
+    text-align: right;
+    z-index: 1;
+  }
+
+  .foundation-name {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .foundation-name .open { color: #FAFAF9; }
+  .foundation-name .aec  { color: #EA4B71; }
+
+  .foundation-sub {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 11px;
+    color: #A1A1AA;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="top-strip"></div>
+
+    <!-- Left: text content -->
+    <div class="left">
+      <div class="number">21</div>
+      <div class="title">Deterministic Skills</div>
+      <div class="subtitle">for flawless n8n workflow automation development</div>
+
+      <div class="badges">
+        <div class="badge badge-n8n">n8n v1.x</div>
+        <div class="badge badge-typescript">TypeScript</div>
+        <div class="badge badge-json">JSON</div>
+      </div>
+
+      <div class="versions">
+        INodeType <span class="sep">│</span> Expressions <span class="sep">│</span> REST API <span class="sep">│</span> Docker
+      </div>
+    </div>
+
+    <!-- Right: code window -->
+    <div class="right">
+      <div class="code-window">
+        <div class="code-titlebar">
+          <div class="dot dot-red"></div>
+          <div class="dot dot-yellow"></div>
+          <div class="dot dot-green"></div>
+          <span class="code-filename">MyNode.node.ts</span>
+        </div>
+        <div class="code-body">
+          <span class="comment">// n8n Custom Node — Correct Pattern</span><br>
+          <span class="keyword">export class</span> <span class="type">MyNode</span> <span class="keyword">implements</span> <span class="iface">INodeType</span> {<br>
+          &nbsp;&nbsp;<span class="prop">description</span><span class="operator">:</span> <span class="iface">INodeTypeDescription</span> <span class="operator">=</span> {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">displayName</span><span class="operator">:</span> <span class="string">'My Node'</span>,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">name</span><span class="operator">:</span> <span class="string">'myNode'</span>,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">group</span><span class="operator">:</span> [<span class="string">'transform'</span>],<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">version</span><span class="operator">:</span> <span class="operator">1</span>,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">inputs</span><span class="operator">:</span> [<span class="string">'main'</span>],<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="prop">outputs</span><span class="operator">:</span> [<span class="string">'main'</span>],<br>
+          &nbsp;&nbsp;};<br>
+          <br>
+          &nbsp;&nbsp;<span class="keyword">async</span> <span class="function">execute</span>(<span class="keyword">this</span><span class="operator">:</span> <span class="iface">IExecuteFunctions</span>)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="operator">:</span> <span class="type">Promise</span>&lt;<span class="iface">INodeExecutionData</span><span class="operator">[][]</span>&gt; {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const</span> items <span class="operator">=</span> <span class="keyword">this</span>.<span class="function">getInputData</span>();<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> [items];<br>
+          &nbsp;&nbsp;}<br>
+          }<span class="cursor"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Foundation brand -->
+    <div class="foundation">
+      <div class="foundation-name"><span class="open">Open</span><span class="aec">AEC</span></div>
+      <div class="foundation-sub">Foundation</div>
+    </div>
+  </div>
+</body>
+</html>
