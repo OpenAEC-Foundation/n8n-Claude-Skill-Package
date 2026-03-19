@@ -54,3 +54,31 @@ Architectural and process decisions with rationale. Each decision is numbered an
 **Context**: Need to host the repository publicly
 **Decision**: Repository hosted at `OpenAEC-Foundation/n8n-Claude-Skill-Package` on GitHub
 **Rationale**: Consistent with all other skill packages under the OpenAEC Foundation organization. Provides discoverability and organizational credibility.
+
+## D-008: Merge core-data-flow into core-architecture
+**Date**: 2026-03-19
+**Status**: ACTIVE
+**Context**: Raw masterplan had separate data-flow and architecture skills
+**Decision**: Merge n8n-core-data-flow into n8n-core-architecture
+**Rationale**: Item-based data flow IS the core architecture. Splitting forces loading two skills for one concept. Research confirmed data flow is inseparable from execution model.
+
+## D-009: Merge backup-restore into deployment
+**Date**: 2026-03-19
+**Status**: ACTIVE
+**Context**: Raw masterplan had separate backup-restore skill
+**Decision**: Merge n8n-impl-backup-restore into n8n-impl-deployment
+**Rationale**: CLI export/import is only 3 commands. Backup is a deployment operations concern, too thin for its own skill.
+
+## D-010: Add extension-methods as standalone skill
+**Date**: 2026-03-19
+**Status**: ACTIVE
+**Context**: Research revealed 80+ n8n-specific expression extension methods
+**Decision**: Create n8n-syntax-extension-methods as standalone skill
+**Rationale**: 17 string + 21 array + 13 number + 12 object + 3 boolean + 25+ DateTime methods. Too substantial for expressions skill references. Needs its own decision trees and reference tables.
+
+## D-011: Merge topic research into skill creation
+**Date**: 2026-03-19
+**Status**: ACTIVE
+**Context**: Phase 4 (topic-specific research) would add a separate step
+**Decision**: Merge Phase 4 into Phase 5 — agents read research fragments directly during skill creation
+**Rationale**: Research fragments are comprehensive enough (3 documents, covering all areas). Separate topic research would be redundant. Agents can reference fragments directly.

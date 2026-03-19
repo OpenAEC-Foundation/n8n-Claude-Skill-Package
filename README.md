@@ -2,11 +2,11 @@
 
 ![Claude Code Ready](https://img.shields.io/badge/Claude_Code-Ready-blue?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyczQuNDggMTAgMTAgMTAgMTAtNC40OCAxMC0xMFMxNy41MiAyIDEyIDJ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+)
 ![n8n v1.x](https://img.shields.io/badge/n8n-v1.x-EA4B71?style=flat-square)
+![21 Skills](https://img.shields.io/badge/Skills-21-green?style=flat-square)
 ![TypeScript + JSON](https://img.shields.io/badge/TypeScript_+_JSON-Workflow_Automation-3178C6?style=flat-square)
-![Phase 1](https://img.shields.io/badge/Phase_1-Infrastructure_Ready-orange?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
-**Deterministic Claude AI skills for n8n workflow automation — visual node-based editor for integrating APIs, services, and data.**
+**21 deterministic Claude AI skills for n8n v1.x workflow automation — node-based editor for integrating APIs, services, and data.**
 
 Built on the [Agent Skills](https://agentskills.org) open standard.
 
@@ -55,33 +55,55 @@ export class MyNode implements INodeType {
 
 ---
 
-## Current Progress
+## Skills (21)
 
-**Phase 1 — Infrastructure Ready** (50%)
+### Core (2 skills)
 
-Core governance files and repository structure established. Next: raw masterplan and deep research.
+| Skill | What It Covers |
+|-------|---------------|
+| [n8n-core-architecture](skills/source/n8n-core/n8n-core-architecture/SKILL.md) | Execution model, item-based data flow, binary data, paired items, process modes |
+| [n8n-core-api](skills/source/n8n-core/n8n-core-api/SKILL.md) | REST API endpoints, authentication, pagination, workflow/execution management |
 
-## Skill Categories
+### Syntax (8 skills)
 
-| Category | Purpose |
-|----------|---------|
-| `n8n-syntax/` | Node APIs, expression syntax, workflow JSON, credential types |
-| `n8n-impl/` | Custom node development, deployment, integration workflows |
-| `n8n-errors/` | Error diagnosis, execution failures, debugging patterns |
-| `n8n-core/` | Architecture, execution model, API overview |
-| `n8n-agents/` | Workflow validation, code generation orchestration |
+| Skill | What It Covers |
+|-------|---------------|
+| [n8n-syntax-workflow-json](skills/source/n8n-syntax/n8n-syntax-workflow-json/SKILL.md) | Workflow JSON structure, IConnections 3-level nesting, 13 connection types |
+| [n8n-syntax-expressions](skills/source/n8n-syntax/n8n-syntax-expressions/SKILL.md) | All `$` variables, JMESPath, paired items, static data, utility functions |
+| [n8n-syntax-extension-methods](skills/source/n8n-syntax/n8n-syntax-extension-methods/SKILL.md) | 80+ methods: string, array, number, object, boolean, DateTime/Luxon |
+| [n8n-syntax-node-types](skills/source/n8n-syntax/n8n-syntax-node-types/SKILL.md) | INodeType, INodeProperties (22 types), displayOptions, execute(), declarative |
+| [n8n-syntax-credentials](skills/source/n8n-syntax/n8n-syntax-credentials/SKILL.md) | ICredentialType, 4 auth injection methods, OAuth2, credential testing |
+| [n8n-syntax-code-node](skills/source/n8n-syntax/n8n-syntax-code-node/SKILL.md) | Code node JS/Python, execution modes, restrictions, binary data |
+| [n8n-syntax-trigger-nodes](skills/source/n8n-syntax/n8n-syntax-trigger-nodes/SKILL.md) | Event/polling/webhook triggers, ITriggerFunctions, webhook lifecycle |
+| [n8n-syntax-ai-nodes](skills/source/n8n-syntax/n8n-syntax-ai-nodes/SKILL.md) | AI/LLM cluster nodes, agents, memory, vector stores, RAG patterns |
 
-## Tech Coverage (Planned)
+### Implementation (6 skills)
 
-| Area | Topics |
-|------|--------|
-| **Workflow Engine** | Execution model, trigger types, node connections, data flow |
-| **Custom Nodes** | INodeType, INodeTypeDescription, execute methods, credential integration |
-| **Expressions** | $json, $input, $node, $workflow references, JMESPath |
-| **Credentials** | ICredentialType, OAuth2, API key, custom authentication |
-| **REST API** | Workflow CRUD, execution management, webhook API |
-| **Deployment** | Docker, environment configuration, queue mode, scaling |
-| **Error Handling** | continueOnFail, error workflows, retry strategies |
+| Skill | What It Covers |
+|-------|---------------|
+| [n8n-impl-custom-nodes](skills/source/n8n-impl/n8n-impl-custom-nodes/SKILL.md) | Custom node development, n8n-nodes-starter, packaging, npm publishing |
+| [n8n-impl-deployment](skills/source/n8n-impl/n8n-impl-deployment/SKILL.md) | Docker Compose, 100+ env vars, queue mode, Redis, CLI, backup |
+| [n8n-impl-workflow-design](skills/source/n8n-impl/n8n-impl-workflow-design/SKILL.md) | Sub-workflows, error workflows, branching, merge/loop, scheduling |
+| [n8n-impl-integrations](skills/source/n8n-impl/n8n-impl-integrations/SKILL.md) | HTTP Request node, OAuth2 flows, pagination, generic credentials |
+| [n8n-impl-webhooks](skills/source/n8n-impl/n8n-impl-webhooks/SKILL.md) | Webhook node, test vs production URLs, response modes, authentication |
+| [n8n-impl-security](skills/source/n8n-impl/n8n-impl-security/SKILL.md) | Encryption, Docker Secrets, task runners, CORS, reverse proxy, audit |
+
+### Error Handling (3 skills)
+
+| Skill | What It Covers |
+|-------|---------------|
+| [n8n-errors-execution](skills/source/n8n-errors/n8n-errors-execution/SKILL.md) | Execution failures, continueOnFail, retry, error workflows |
+| [n8n-errors-expressions](skills/source/n8n-errors/n8n-errors-expressions/SKILL.md) | Expression errors, undefined refs, type mismatches, context restrictions |
+| [n8n-errors-connection](skills/source/n8n-errors/n8n-errors-connection/SKILL.md) | API failures, credential errors, timeouts, SSL, webhook URLs |
+
+### Agents (2 skills)
+
+| Skill | What It Covers |
+|-------|---------------|
+| [n8n-agents-review](skills/source/n8n-agents/n8n-agents-review/SKILL.md) | Validation checklist: JSON, connections, expressions, credentials, deployment |
+| [n8n-agents-project-scaffolder](skills/source/n8n-agents/n8n-agents-project-scaffolder/SKILL.md) | Generate Docker Compose, custom nodes, workflow templates, env files |
+
+---
 
 ## Installation
 
@@ -100,38 +122,27 @@ git submodule add https://github.com/OpenAEC-Foundation/n8n-Claude-Skill-Package
 
 Upload individual SKILL.md files as project knowledge.
 
+---
+
 ## Methodology
 
-This package is developed using the **7-phase research-first methodology**, proven across multiple skill packages:
+Built using the **7-phase research-first methodology**, proven across:
+- [ERPNext Skill Package](https://github.com/OpenAEC-Foundation/ERPNext_Anthropic_Claude_Development_Skill_Package) (28 skills)
+- [Blender-Bonsai Skill Package](https://github.com/OpenAEC-Foundation/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package) (73 skills)
+- [Tauri 2 Skill Package](https://github.com/OpenAEC-Foundation/Tauri-2-Claude-Skill-Package) (27 skills)
 
-1. **Setup + Raw Masterplan** — Project structure and governance files
-2. **Deep Research** — Comprehensive source analysis of n8n documentation, source code, and community resources
-3. **Masterplan Refinement** — Skill inventory refinement based on research findings
-4. **Topic-Specific Research** — Deep-dive per skill topic
-5. **Skill Creation** — Deterministic skill files following Agent Skills standard
-6. **Validation** — Correctness, completeness, and consistency checks
-7. **Publication** — GitHub release and documentation
+All code verified against [official n8n documentation](https://docs.n8n.io/) and [n8n source code](https://github.com/n8n-io/n8n). No hallucinated APIs.
 
 ## Documentation
 
 | Document | Purpose |
 |----------|---------|
+| [INDEX.md](INDEX.md) | Complete skill catalog with descriptions |
 | [ROADMAP.md](ROADMAP.md) | Project status (single source of truth) |
-| [REQUIREMENTS.md](REQUIREMENTS.md) | Quality guarantees and per-area requirements |
-| [DECISIONS.md](DECISIONS.md) | Architectural decisions with rationale |
-| [SOURCES.md](SOURCES.md) | Official reference URLs and verification rules |
-| [WAY_OF_WORK.md](WAY_OF_WORK.md) | 7-phase development methodology |
-| [LESSONS.md](LESSONS.md) | Lessons learned during development |
-| [CHANGELOG.md](CHANGELOG.md) | Version history |
-
-## Related Projects
-
-| Project | Description |
-|---------|-------------|
-| [ERPNext Skill Package](https://github.com/OpenAEC-Foundation/ERPNext_Anthropic_Claude_Development_Skill_Package) | 28 skills for ERPNext/Frappe development |
-| [Blender-Bonsai Skill Package](https://github.com/OpenAEC-Foundation/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package) | 73 skills for Blender, Bonsai, IfcOpenShell & Sverchok |
-| [Tauri 2 Skill Package](https://github.com/OpenAEC-Foundation/Tauri-2-Claude-Skill-Package) | 27 skills for Tauri 2 desktop application development |
-| [OpenAEC Foundation](https://github.com/OpenAEC-Foundation) | Parent organization |
+| [REQUIREMENTS.md](REQUIREMENTS.md) | Quality guarantees |
+| [DECISIONS.md](DECISIONS.md) | Architectural decisions |
+| [SOURCES.md](SOURCES.md) | Official reference URLs |
+| [WAY_OF_WORK.md](WAY_OF_WORK.md) | Development methodology |
 
 ## License
 
