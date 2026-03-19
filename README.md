@@ -1,5 +1,9 @@
 # n8n Claude Skill Package
 
+<p align="center">
+  <img src="docs/social-preview.png" alt="21 Deterministic Skills for n8n" width="100%">
+</p>
+
 ![Claude Code Ready](https://img.shields.io/badge/Claude_Code-Ready-blue?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyczQuNDggMTAgMTAgMTAgMTAtNC40OCAxMC0xMFMxNy41MiAyIDEyIDJ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+)
 ![n8n v1.x](https://img.shields.io/badge/n8n-v1.x-EA4B71?style=flat-square)
 ![21 Skills](https://img.shields.io/badge/Skills-21-green?style=flat-square)
