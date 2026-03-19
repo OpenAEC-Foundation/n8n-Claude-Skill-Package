@@ -1,6 +1,15 @@
 ---
 name: n8n-syntax-node-types
-description: "Guides n8n v1.x node type system including INodeType interface, INodeTypeDescription, INodeProperties (22 types), displayOptions with rich conditions, execute() method with IExecuteFunctions, Node base class alternative, versioned nodes, declarative routing, and methods (loadOptions, listSearch, credentialTest, resourceMapping). Activates when creating custom n8n nodes, defining node properties, implementing execute methods, or building declarative nodes."
+description: >
+  Use when creating custom n8n nodes, defining node properties, implementing
+  execute methods, or building declarative nodes. Prevents incorrect
+  INodeProperties types and malformed displayOptions conditions. Covers
+  INodeType interface, INodeTypeDescription, INodeProperties (22 types),
+  displayOptions with rich conditions, execute() method with IExecuteFunctions,
+  Node base class alternative, versioned nodes, declarative routing, and methods
+  (loadOptions, listSearch, credentialTest, resourceMapping).
+  Keywords: n8n, custom nodes, INodeType, INodeProperties, execute,
+  displayOptions, declarative routing, versioned nodes, credentialTest.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

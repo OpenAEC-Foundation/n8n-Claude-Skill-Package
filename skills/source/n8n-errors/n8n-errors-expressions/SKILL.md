@@ -1,6 +1,14 @@
 ---
 name: n8n-errors-expressions
-description: "Diagnoses and resolves n8n v1.x expression errors including undefined $json references, type mismatches, missing paired items, $itemIndex unavailability in Code node, $secrets restriction in Code node, JMESPath parameter order confusion, empty expression results, and context-dependent variable availability. Activates when debugging expression evaluation failures, fixing undefined references, or troubleshooting data access issues."
+description: >
+  Use when debugging expression evaluation failures or undefined
+  references in n8n workflows. Prevents data access errors by mapping
+  every expression variable to its valid context. Covers undefined $json
+  references, type mismatches, missing paired items, $itemIndex
+  unavailability in Code node, $secrets restriction in Code node,
+  JMESPath parameter order confusion, empty expression results, and
+  context-dependent variable availability.
+  Keywords: n8n, expression, error, $json, variable, type mismatch.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

@@ -82,3 +82,17 @@ Architectural and process decisions with rationale. Each decision is numbered an
 **Context**: Phase 4 (topic-specific research) would add a separate step
 **Decision**: Merge Phase 4 into Phase 5 — agents read research fragments directly during skill creation
 **Rationale**: Research fragments are comprehensive enough (3 documents, covering all areas). Separate topic research would be redundant. Agents can reference fragments directly.
+
+## D-012: Rename workflow-patterns to workflow-design
+**Date**: 2026-03-19
+**Status**: ACTIVE
+**Context**: Raw masterplan had skill named n8n-impl-workflow-patterns
+**Decision**: Rename to n8n-impl-workflow-design
+**Rationale**: Better reflects scope: sub-workflows, error workflows, branching/merge patterns, loops. "Design" signals architectural patterns, not just code snippets. Corresponds to masterplan refinement decision D-04.
+
+## D-013: Reorder batches for dependency chains
+**Date**: 2026-03-19
+**Status**: ACTIVE
+**Context**: Initial batch ordering did not respect all dependency chains
+**Decision**: Reorder batches so syntax-expressions is in batch 2 (earlier), since code-node and workflow-design depend on expression knowledge
+**Rationale**: Core skills first, then syntax, then impl. Expression knowledge is foundational for many later skills. Corresponds to masterplan refinement decision D-05.

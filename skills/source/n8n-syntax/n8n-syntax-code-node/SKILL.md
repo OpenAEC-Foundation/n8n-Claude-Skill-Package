@@ -1,6 +1,12 @@
 ---
 name: n8n-syntax-code-node
-description: "Guides n8n v1.x Code node including JavaScript and Python modes, runOnceForAllItems vs runOnceForEachItem execution, available variables ($input, $json, items), binary data handling, built-in modules, $() node access, Python _ prefix convention, and restrictions. Activates when writing Code node logic, transforming data programmatically, or debugging Code node errors."
+description: >
+  Use when writing Code node logic in n8n workflows with JavaScript or Python.
+  Prevents misuse of unavailable variables ($itemIndex, $secrets) or restricted
+  modules (fs, http). Covers runOnceForAllItems vs runOnceForEachItem execution,
+  available variables ($input, $json, items), binary data handling, built-in
+  modules, $() node access, Python _ prefix convention, and restrictions.
+  Keywords: n8n, Code node, JavaScript, Python, $input, $json, items.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

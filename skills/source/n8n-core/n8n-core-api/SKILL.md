@@ -1,6 +1,13 @@
 ---
 name: n8n-core-api
-description: "Guides n8n v1.x REST API including all endpoints (workflows, executions, credentials, users, tags, variables, projects), API key authentication via X-N8N-API-KEY header, cursor-based pagination, and API configuration. Activates when integrating with n8n programmatically, managing workflows via API, or building n8n admin tools."
+description: >
+  Use when integrating with n8n programmatically, managing workflows via API,
+  or building n8n admin tools. Prevents authentication errors and incorrect
+  endpoint usage. Covers all REST API endpoints (workflows, executions,
+  credentials, users, tags, variables, projects), API key authentication via
+  X-N8N-API-KEY header, cursor-based pagination, and API configuration.
+  Keywords: n8n, REST API, endpoints, API key, X-N8N-API-KEY, pagination,
+  workflows, executions, credentials, admin tools.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

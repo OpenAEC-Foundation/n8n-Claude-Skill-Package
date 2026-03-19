@@ -1,6 +1,13 @@
 ---
 name: n8n-syntax-trigger-nodes
-description: "Guides n8n v1.x trigger node development including three trigger patterns (event/timer, polling, webhook), ITriggerFunctions, IWebhookFunctions, IPollFunctions interfaces, ITriggerResponse with manualTriggerFunction and closeFunction, webhook lifecycle methods (checkExists/create/delete), and WebhookResponseMode types. Activates when creating custom trigger nodes, implementing webhook handlers, building polling triggers, or understanding trigger node lifecycle."
+description: >
+  Use when creating custom trigger nodes or implementing webhook/polling handlers
+  in n8n v1.x. Prevents incorrect trigger lifecycle implementation by missing
+  closeFunction or manualTriggerFunction. Covers three trigger patterns
+  (event/timer, polling, webhook), ITriggerFunctions, IWebhookFunctions,
+  IPollFunctions interfaces, ITriggerResponse, webhook lifecycle methods
+  (checkExists/create/delete), and WebhookResponseMode types.
+  Keywords: n8n, trigger node, webhook, polling, ITriggerFunctions.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

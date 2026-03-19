@@ -1,6 +1,13 @@
 ---
 name: n8n-core-architecture
-description: "Guides n8n v1.x architecture including the item-based execution model, INodeExecutionData structure, binary data handling, paired items, node types (trigger/regular), process modes (main/worker/queue), and workflow settings. Activates when building n8n workflows, creating custom nodes, understanding data flow, or debugging execution issues."
+description: >
+  Use when building n8n workflows, creating custom nodes, understanding data
+  flow, or debugging execution issues. Prevents incorrect INodeExecutionData
+  structure and data flow mistakes. Covers item-based execution model, binary
+  data handling, paired items, node types (trigger/regular), process modes
+  (main/worker/queue), and workflow settings.
+  Keywords: n8n, architecture, INodeExecutionData, execution model, binary data,
+  paired items, trigger nodes, queue mode, workflow settings.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

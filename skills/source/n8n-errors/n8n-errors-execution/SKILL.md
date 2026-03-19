@@ -1,6 +1,12 @@
 ---
 name: n8n-errors-execution
-description: "Diagnoses and resolves n8n v1.x execution errors including node failures, timeout handling, continueOnFail pattern, Error Trigger node, error workflows, retry on fail configuration, Stop And Error node, execution data inspection, and the 4 error handling patterns. Activates when debugging workflow failures, implementing error recovery, configuring retry logic, or setting up error notification workflows."
+description: >
+  Use when debugging workflow execution failures or implementing error
+  recovery in n8n. Prevents silent failures by enforcing the 4 error
+  handling patterns. Covers node failures, timeout handling,
+  continueOnFail pattern, Error Trigger node, error workflows, retry on
+  fail configuration, Stop And Error node, and execution data inspection.
+  Keywords: n8n, error, execution, retry, timeout, failure, recovery.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

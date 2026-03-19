@@ -1,6 +1,13 @@
 ---
 name: n8n-impl-webhooks
-description: "Guides n8n v1.x webhook implementation including Webhook node configuration (6 HTTP methods, test vs production URLs, 4 response modes, 4 auth methods), Respond to Webhook node (8 response types including JWT and streaming), dynamic path parameters, binary data handling, CORS configuration, IP whitelist, and 16MB payload limit. Activates when setting up webhooks, configuring webhook authentication, handling webhook responses, or debugging webhook URL issues."
+description: >
+  Use when configuring webhook endpoints in n8n workflows. Prevents the
+  #1 mistake of using test URLs in production (different base paths).
+  Covers Webhook node setup, 6 HTTP methods, test vs production URLs,
+  4 response modes, 4 auth methods, Respond to Webhook node (8 response
+  types including JWT and streaming), dynamic path parameters, binary
+  data handling, CORS configuration, IP whitelist, and 16MB payload limit.
+  Keywords: n8n, webhook, HTTP, REST, callback, trigger, response mode.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

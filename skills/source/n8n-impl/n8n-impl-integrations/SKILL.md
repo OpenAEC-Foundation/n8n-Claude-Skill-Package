@@ -1,6 +1,12 @@
 ---
 name: n8n-impl-integrations
-description: "Guides n8n v1.x API integration patterns including HTTP Request node configuration, OAuth2 credential flows, pagination handling, generic credential usage for custom APIs, response handling, binary downloads, batch request patterns, and API error handling. Activates when integrating external APIs, configuring OAuth2, handling paginated responses, or building custom API workflows."
+description: >
+  Use when integrating external APIs in n8n v1.x via HTTP Request node or
+  OAuth2 credentials. Prevents pagination bugs from missing response handling
+  or incorrect credential configuration. Covers HTTP Request node configuration,
+  OAuth2 credential flows, pagination handling, generic credential usage for
+  custom APIs, binary downloads, batch request patterns, and API error handling.
+  Keywords: n8n, HTTP Request, API integration, OAuth2, pagination, credentials.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

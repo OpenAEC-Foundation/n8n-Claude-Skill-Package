@@ -1,6 +1,13 @@
 ---
 name: n8n-impl-deployment
-description: "Guides n8n v1.x deployment including Docker/Docker Compose setup, 100+ environment variables, queue mode with Redis/BullMQ, worker processes, webhook processor, PostgreSQL/SQLite configuration, volume mounts, Traefik reverse proxy, scaling strategies, CLI commands (export/import/execute), backup strategies, and updating procedures. Activates when deploying n8n, configuring Docker, setting up queue mode, managing environment variables, or performing backup/restore operations."
+description: >
+  Use when deploying n8n v1.x to production or configuring Docker/queue mode.
+  Prevents data loss from missing volume mounts or incorrect database
+  configuration. Covers Docker/Docker Compose setup, 100+ environment variables,
+  queue mode with Redis/BullMQ, worker processes, webhook processor,
+  PostgreSQL/SQLite configuration, Traefik reverse proxy, scaling strategies,
+  CLI commands (export/import/execute), backup strategies, and updating.
+  Keywords: n8n, Docker, deployment, queue mode, Redis, PostgreSQL, backup.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

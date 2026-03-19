@@ -1,6 +1,14 @@
 ---
 name: n8n-syntax-expressions
-description: "Guides n8n v1.x expression system including all built-in variables ($json, $input, $node, $workflow, $execution, $env, $vars, $now, $today), JMESPath queries ($jmespath), paired items, static workflow data ($getWorkflowStaticData), utility functions ($ifEmpty), and expression context rules. Activates when writing n8n expressions, accessing node data, using JMESPath, or debugging expression errors."
+description: >
+  Use when writing n8n expressions, accessing node data, using JMESPath, or
+  debugging expression errors. Prevents incorrect variable references and
+  expression context mistakes. Covers all built-in variables ($json, $input,
+  $node, $workflow, $execution, $env, $vars, $now, $today), JMESPath queries
+  ($jmespath), paired items, static workflow data ($getWorkflowStaticData),
+  utility functions ($ifEmpty), and expression context rules.
+  Keywords: n8n, expressions, $json, $input, $node, JMESPath, $env, $vars,
+  paired items, $getWorkflowStaticData.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

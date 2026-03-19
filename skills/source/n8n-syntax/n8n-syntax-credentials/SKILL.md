@@ -1,6 +1,15 @@
 ---
 name: n8n-syntax-credentials
-description: "Guides n8n v1.x credential system including ICredentialType interface, credential properties, authenticate property with 4 injection methods (query, header, body, basic auth), OAuth2 configuration, API key patterns, credential testing via ICredentialTestRequest, and genericCredentialRequest. Activates when creating custom credentials, implementing authentication, configuring OAuth2, or testing credential connections."
+description: >
+  Use when creating custom credentials, implementing authentication, configuring
+  OAuth2, or testing credential connections. Prevents incorrect authenticate
+  injection methods and OAuth2 misconfiguration. Covers ICredentialType
+  interface, credential properties, authenticate property with 4 injection
+  methods (query, header, body, basic auth), OAuth2 configuration, API key
+  patterns, credential testing via ICredentialTestRequest, and
+  genericCredentialRequest.
+  Keywords: n8n, credentials, ICredentialType, authenticate, OAuth2, API key,
+  credential testing, ICredentialTestRequest, genericCredentialRequest.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

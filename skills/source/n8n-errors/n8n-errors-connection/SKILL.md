@@ -1,6 +1,13 @@
 ---
 name: n8n-errors-connection
-description: "Diagnoses and resolves n8n v1.x connection errors including API failures, credential errors, timeout configuration, SSL/TLS issues, webhook URL problems (test vs production), rate limiting, queue mode connection issues (Redis), database connection failures, and retry strategies. Activates when troubleshooting API connection failures, credential authentication errors, timeout issues, or webhook delivery problems."
+description: >
+  Use when troubleshooting API connection failures, credential errors,
+  or timeout issues in n8n. Prevents misdiagnosis by providing
+  deterministic symptom-cause-fix tables. Covers API failures, credential
+  errors, timeout configuration, SSL/TLS issues, webhook URL problems
+  (test vs production), rate limiting, queue mode connection issues
+  (Redis), database connection failures, and retry strategies.
+  Keywords: n8n, connection, API, timeout, SSL, credential, Redis.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

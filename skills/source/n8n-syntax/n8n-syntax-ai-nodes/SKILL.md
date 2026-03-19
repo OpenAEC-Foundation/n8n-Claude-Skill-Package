@@ -1,6 +1,13 @@
 ---
 name: n8n-syntax-ai-nodes
-description: "Guides n8n v1.x AI/LLM cluster node system including agent nodes (6 types), chain nodes, tool nodes, memory backends (8 types), vector stores (11 types), output parsers, text splitters, retrievers, AI sub-node connections (12 NodeConnectionTypes), langchain integration, RAG patterns, and human-in-the-loop. Activates when building AI workflows, connecting LLM models, implementing RAG, or using AI agents in n8n."
+description: >
+  Use when building AI or LLM workflows in n8n v1.x (v1.19.4+). Prevents
+  incorrect sub-node wiring by mismatching NodeConnectionTypes. Covers agent
+  nodes (6 types), chain nodes, tool nodes, memory backends (8 types), vector
+  stores (11 types), output parsers, text splitters, retrievers, AI sub-node
+  connections (12 NodeConnectionTypes), langchain integration, RAG patterns,
+  and human-in-the-loop.
+  Keywords: n8n, AI nodes, LLM, langchain, RAG, vector store, agents.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x (v1.19.4+ for AI features)."
 metadata:

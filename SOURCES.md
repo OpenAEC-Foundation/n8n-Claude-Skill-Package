@@ -68,4 +68,9 @@ All skills in this package MUST be verified against these approved sources. No o
 
 | Technology | Date | Action | Notes |
 |------------|------|--------|-------|
-| n8n | 2026-03-19 | Initial setup | All URLs pending verification |
+| n8n Documentation | 2026-03-19 | Verified via WebFetch | Core docs, workflow concepts, code examples |
+| n8n Source Code | 2026-03-19 | Verified via WebFetch | GitHub monorepo, nodes-base, workflow package |
+| n8n Hosting Docs | 2026-03-19 | Verified via WebFetch | Docker, environment variables, queue mode |
+| n8n API Reference | 2026-03-19 | Verified via WebFetch | REST API endpoints, authentication |
+| n8n Credentials Docs | 2026-03-19 | Verified via WebFetch | Credential types, OAuth2, testing |
+| n8n Community | 2026-03-19 | Reviewed | Forum posts, GitHub issues for anti-patterns |

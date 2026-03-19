@@ -1,6 +1,14 @@
 ---
 name: n8n-impl-security
-description: "Guides n8n v1.x security implementation including credential encryption (N8N_ENCRYPTION_KEY), execution data pruning, CORS configuration, reverse proxy setup, SSL/TLS, task runners (N8N_RUNNERS_ENABLED), external secrets, security audit endpoint, Docker Secrets (_FILE suffix), and environment variable security. Activates when hardening n8n security, configuring encryption, setting up reverse proxy, or performing security audits."
+description: >
+  Use when hardening n8n deployments or configuring security settings.
+  Prevents credential leaks and unauthorized access by enforcing
+  encryption, network isolation, and audit practices. Covers credential
+  encryption (N8N_ENCRYPTION_KEY), execution data pruning, CORS, reverse
+  proxy setup, SSL/TLS, task runners (N8N_RUNNERS_ENABLED), external
+  secrets, security audit endpoint, Docker Secrets (_FILE suffix), and
+  environment variable security.
+  Keywords: n8n, security, encryption, SSL, reverse proxy, Docker, audit.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

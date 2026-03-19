@@ -1,6 +1,12 @@
 ---
 name: n8n-impl-custom-nodes
-description: "Guides n8n v1.x custom node development workflow including n8n-nodes-starter template, community node packaging, project structure, package.json n8n field configuration, programmatic vs declarative node styles, credential registration, testing with WorkflowTestData, and publishing to npm. Activates when creating custom n8n nodes, building community node packages, or publishing nodes to the n8n community."
+description: >
+  Use when creating custom n8n nodes or building community node packages for
+  npm. Prevents packaging errors from incorrect package.json n8n field
+  configuration or missing credential registration. Covers n8n-nodes-starter
+  template, community node packaging, project structure, programmatic vs
+  declarative node styles, testing with WorkflowTestData, and publishing to npm.
+  Keywords: n8n, custom node, community node, npm, INodeType, starter template.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

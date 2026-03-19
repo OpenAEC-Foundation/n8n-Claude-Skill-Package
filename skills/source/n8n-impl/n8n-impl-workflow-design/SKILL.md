@@ -1,6 +1,13 @@
 ---
 name: n8n-impl-workflow-design
-description: "Guides n8n v1.x workflow design patterns including sub-workflow execution (Execute Workflow node), error workflows and Error Trigger node, retry logic, branching (IF/Switch nodes), merge patterns (Merge node modes), loop patterns (Loop Over Items), wait/webhook resume, scheduling patterns, and Stop And Error node. Activates when designing complex workflows, implementing error handling, building sub-workflow architectures, or creating branching logic."
+description: >
+  Use when designing complex n8n v1.x workflows with branching, error handling,
+  or sub-workflow patterns. Prevents silent failures from missing error workflows
+  or incorrect merge node modes. Covers sub-workflow execution (Execute Workflow
+  node), Error Trigger node, retry logic, branching (IF/Switch nodes), merge
+  patterns (Merge node modes), loop patterns (Loop Over Items), wait/webhook
+  resume, scheduling patterns, and Stop And Error node.
+  Keywords: n8n, workflow design, error handling, sub-workflow, merge, branching.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

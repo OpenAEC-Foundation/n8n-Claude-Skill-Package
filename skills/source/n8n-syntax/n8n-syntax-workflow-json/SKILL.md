@@ -1,6 +1,14 @@
 ---
 name: n8n-syntax-workflow-json
-description: "Guides n8n v1.x workflow JSON structure including IWorkflowBase format, INode configuration, IConnections 3-level nesting (node name → connection type → output index → targets), NodeConnectionTypes (main + 12 AI types), node parameter formats, and workflow settings. Activates when creating workflow JSON, importing/exporting workflows, building workflow templates, or debugging connection issues."
+description: >
+  Use when creating workflow JSON, importing/exporting workflows, building
+  workflow templates, or debugging connection issues. Prevents malformed
+  IConnections nesting and invalid node parameter formats. Covers IWorkflowBase
+  format, INode configuration, IConnections 3-level nesting (node name to
+  connection type to output index to targets), NodeConnectionTypes (main + 12
+  AI types), node parameter formats, and workflow settings.
+  Keywords: n8n, workflow JSON, IWorkflowBase, INode, IConnections,
+  NodeConnectionTypes, workflow templates, import, export.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

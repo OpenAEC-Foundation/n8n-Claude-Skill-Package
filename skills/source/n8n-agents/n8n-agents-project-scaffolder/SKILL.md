@@ -1,6 +1,13 @@
 ---
 name: n8n-agents-project-scaffolder
-description: "Generates complete n8n v1.x project structures including Docker Compose with PostgreSQL configuration, environment file templates, custom node package scaffolds (n8n-nodes-starter), workflow JSON templates, credential configurations, queue mode setup, and backup scripts. Activates when creating new n8n deployments, scaffolding custom node packages, or generating workflow templates."
+description: >
+  Use when creating new n8n deployments or scaffolding custom node
+  packages from scratch. Prevents misconfiguration by generating
+  production-ready project structures. Covers Docker Compose with
+  PostgreSQL, environment file templates, custom node package scaffolds
+  (n8n-nodes-starter), workflow JSON templates, credential configurations,
+  queue mode setup, and backup scripts.
+  Keywords: n8n, scaffold, project, Docker, deployment, template.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

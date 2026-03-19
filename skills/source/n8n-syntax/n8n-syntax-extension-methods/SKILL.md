@@ -1,6 +1,15 @@
 ---
 name: n8n-syntax-extension-methods
-description: "Guides n8n v1.x expression extension methods including 17 string methods (.extractEmail, .hash, .toDateTime, .urlEncode), 21 array methods (.pluck, .removeDuplicates, .chunk, .smartJoin), 13 number methods, 12 object methods (.compact, .keepFieldsContaining), 3 boolean methods, 25+ DateTime/Luxon methods (.plus, .minus, .format, .diffTo), and 7 BinaryFile properties. Activates when transforming data in expressions, formatting dates, manipulating arrays/objects, or working with binary file metadata."
+description: >
+  Use when transforming data in expressions, formatting dates, manipulating
+  arrays/objects, or working with binary file metadata. Prevents using
+  unavailable methods and incorrect method signatures. Covers 17 string methods
+  (.extractEmail, .hash, .toDateTime, .urlEncode), 21 array methods (.pluck,
+  .removeDuplicates, .chunk, .smartJoin), 13 number methods, 12 object methods
+  (.compact, .keepFieldsContaining), 3 boolean methods, 25+ DateTime/Luxon
+  methods (.plus, .minus, .format, .diffTo), and 7 BinaryFile properties.
+  Keywords: n8n, extension methods, string, array, DateTime, Luxon, pluck,
+  extractEmail, removeDuplicates, binary file.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

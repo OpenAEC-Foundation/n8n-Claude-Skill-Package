@@ -1,6 +1,13 @@
 ---
 name: n8n-agents-review
-description: "Validates generated n8n v1.x code and workflows for correctness by checking workflow JSON structure, node configuration, connection wiring, expression syntax, credential setup, error handling patterns, deployment configuration, and known anti-patterns. Activates when reviewing n8n workflows, validating workflow JSON, checking custom node code, or auditing n8n deployment configuration."
+description: >
+  Use when reviewing n8n workflows or validating workflow JSON before
+  deployment. Prevents production errors by catching anti-patterns in
+  node configuration, connection wiring, and expression syntax. Covers
+  workflow JSON structure, node configuration, connection wiring,
+  expression syntax, credential setup, error handling patterns,
+  deployment configuration, and known anti-patterns.
+  Keywords: n8n, review, validation, workflow, audit, anti-pattern.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

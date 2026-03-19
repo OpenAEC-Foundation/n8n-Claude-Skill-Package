@@ -28,3 +28,18 @@ Observations and findings captured during skill package development.
 **Date**: 2026-03-19
 **Context**: Phase 2 research on Code node
 **Lesson**: No filesystem, no HTTP, no $itemIndex, no $secrets, no $parameter. These restrictions catch many developers off guard. Documented as Critical Warnings in syntax-code-node skill.
+
+## L-006: Single Megacommit Anti-Pattern
+**Date**: 2026-03-19
+**Context**: Phase 5 skill creation — all 7 batches committed at once
+**Lesson**: Committing 96 files in a single commit (research + masterplan + all 21 skills) makes review and rollback nearly impossible. Future packages MUST commit per batch (3 skills) or per phase. Atomic commits preserve the ability to identify when specific issues were introduced.
+
+## L-007: YAML Quoted Strings vs Folded Block Scalar
+**Date**: 2026-03-19
+**Context**: Phase 6 validation — missed YAML format issue
+**Lesson**: The Phase 6 validation checked for YAML frontmatter presence but did not verify the description format (quoted string vs folded block scalar `>`). All 21 skills used quoted strings instead of the required `>` format. Future validation checklists MUST include a specific check for YAML block scalar format.
+
+## L-008: 21 Skills in 7 Batches Is Achievable in One Session
+**Date**: 2026-03-19
+**Context**: Phase 5 skill creation
+**Lesson**: With comprehensive research (3648-line vooronderzoek) and a detailed masterplan with ready-to-execute agent prompts, creating 21 skills in 7 batches of 3 agents is achievable in a single Claude Code session. The key enabler is thorough Phase 2 research that eliminates guesswork during creation.
