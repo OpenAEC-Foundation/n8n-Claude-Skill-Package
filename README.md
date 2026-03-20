@@ -154,4 +154,15 @@ All code verified against [official n8n documentation](https://docs.n8n.io/) and
 
 ---
 
+## Companion Skills: Cross-Technology Integration
+
+> **[Cross-Tech AEC Integration Skills](https://github.com/OpenAEC-Foundation/Cross-Tech-AEC-Claude-Skill-Package)** — 15 skills for technology boundaries
+
+| Skill | Boundary | What it adds |
+|-------|----------|-------------|
+| `crosstech-impl-n8n-aec-pipeline` | n8n ↔ AEC tools | IFC processing pipelines, Speckle webhooks, ERPNext API integration |
+| `crosstech-impl-docker-aec-stack` | Docker ↔ n8n | Containerized n8n with AEC service stack |
+
+---
+
 Part of the [OpenAEC Foundation](https://github.com/OpenAEC-Foundation) ecosystem.
