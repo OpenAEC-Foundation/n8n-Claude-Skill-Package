@@ -7,7 +7,7 @@ description: >
   (event/timer, polling, webhook), ITriggerFunctions, IWebhookFunctions,
   IPollFunctions interfaces, ITriggerResponse, webhook lifecycle methods
   (checkExists/create/delete), and WebhookResponseMode types.
-  Keywords: n8n, trigger node, webhook, polling, ITriggerFunctions.
+  Keywords: n8n, trigger node, webhook, polling, ITriggerFunctions, schedule, cron, every Monday, daily, hourly, recurring, start workflow automatically, polling..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

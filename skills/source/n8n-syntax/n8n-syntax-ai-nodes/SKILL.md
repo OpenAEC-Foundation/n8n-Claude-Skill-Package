@@ -7,7 +7,7 @@ description: >
   stores (11 types), output parsers, text splitters, retrievers, AI sub-node
   connections (12 NodeConnectionTypes), langchain integration, RAG patterns,
   and human-in-the-loop.
-  Keywords: n8n, AI nodes, LLM, langchain, RAG, vector store, agents.
+  Keywords: n8n, AI nodes, LLM, langchain, RAG, vector store, agents, ChatGPT in n8n, AI workflow, LLM chain, RAG pipeline, vector search, AI agent..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x (v1.19.4+ for AI features)."
 metadata:

@@ -8,7 +8,7 @@ description: >
   methods (query, header, body, basic auth), OAuth2 configuration, API key
   patterns, credential testing via ICredentialTestRequest, and
   genericCredentialRequest.
-  Keywords: n8n, credentials, ICredentialType, authenticate, OAuth2, API key,
+  Keywords: n8n, credentials, ICredentialType, authenticate, OAuth2, API key,, setup credentials, API key, OAuth2, authenticate, test connection, credential not working.
   credential testing, ICredentialTestRequest, genericCredentialRequest.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."

@@ -6,7 +6,7 @@ description: >
   endpoint usage. Covers all REST API endpoints (workflows, executions,
   credentials, users, tags, variables, projects), API key authentication via
   X-N8N-API-KEY header, cursor-based pagination, and API configuration.
-  Keywords: n8n, REST API, endpoints, API key, X-N8N-API-KEY, pagination,
+  Keywords: n8n, REST API, endpoints, API key, X-N8N-API-KEY, pagination,, manage workflows via API, programmatic access, admin tool, external control.
   workflows, executions, credentials, admin tools.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."

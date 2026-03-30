@@ -8,7 +8,7 @@ description: >
   displayOptions with rich conditions, execute() method with IExecuteFunctions,
   Node base class alternative, versioned nodes, declarative routing, and methods
   (loadOptions, listSearch, credentialTest, resourceMapping).
-  Keywords: n8n, custom nodes, INodeType, INodeProperties, execute,
+  Keywords: n8n, custom nodes, INodeType, INodeProperties, execute,, create custom node, INodeType, node properties, dropdown options, execute method.
   displayOptions, declarative routing, versioned nodes, credentialTest.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."

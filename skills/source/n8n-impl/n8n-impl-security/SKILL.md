@@ -8,7 +8,7 @@ description: >
   proxy setup, SSL/TLS, task runners (N8N_RUNNERS_ENABLED), external
   secrets, security audit endpoint, Docker Secrets (_FILE suffix), and
   environment variable security.
-  Keywords: n8n, security, encryption, SSL, reverse proxy, Docker, audit.
+  Keywords: n8n, security, encryption, SSL, reverse proxy, Docker, audit, secure n8n, encrypt credentials, HTTPS, access control, Docker secrets, audit..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

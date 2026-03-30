@@ -7,7 +7,7 @@ description: >
   queue mode with Redis/BullMQ, worker processes, webhook processor,
   PostgreSQL/SQLite configuration, Traefik reverse proxy, scaling strategies,
   CLI commands (export/import/execute), backup strategies, and updating.
-  Keywords: n8n, Docker, deployment, queue mode, Redis, PostgreSQL, backup.
+  Keywords: n8n, Docker, deployment, queue mode, Redis, PostgreSQL, backup, install n8n, Docker setup, production deploy, scale n8n, backup data, update n8n..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

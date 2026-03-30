@@ -7,7 +7,7 @@ description: >
   PostgreSQL, environment file templates, custom node package scaffolds
   (n8n-nodes-starter), workflow JSON templates, credential configurations,
   queue mode setup, and backup scripts.
-  Keywords: n8n, scaffold, project, Docker, deployment, template.
+  Keywords: n8n, scaffold, project, Docker, deployment, template, new n8n setup, start from scratch, Docker compose template, project bootstrap..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

@@ -7,7 +7,7 @@ description: >
   4 response modes, 4 auth methods, Respond to Webhook node (8 response
   types including JWT and streaming), dynamic path parameters, binary
   data handling, CORS configuration, IP whitelist, and 16MB payload limit.
-  Keywords: n8n, webhook, HTTP, REST, callback, trigger, response mode.
+  Keywords: n8n, webhook, HTTP, REST, callback, trigger, response mode, receive webhook, HTTP callback, test vs production URL, webhook auth, response mode..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

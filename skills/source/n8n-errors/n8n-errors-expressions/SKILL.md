@@ -8,7 +8,7 @@ description: >
   unavailability in Code node, $secrets restriction in Code node,
   JMESPath parameter order confusion, empty expression results, and
   context-dependent variable availability.
-  Keywords: n8n, expression, error, $json, variable, type mismatch.
+  Keywords: n8n, expression, error, $json, variable, type mismatch, expression error, undefined value, variable not found, wrong type, empty result..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

@@ -6,7 +6,7 @@ description: >
   structure and data flow mistakes. Covers item-based execution model, binary
   data handling, paired items, node types (trigger/regular), process modes
   (main/worker/queue), and workflow settings.
-  Keywords: n8n, architecture, INodeExecutionData, execution model, binary data,
+  Keywords: n8n, architecture, INodeExecutionData, execution model, binary data,, how n8n works, data flow, execution model, getting started, item structure.
   paired items, trigger nodes, queue mode, workflow settings.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."

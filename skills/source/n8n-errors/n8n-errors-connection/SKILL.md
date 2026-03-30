@@ -7,7 +7,7 @@ description: >
   errors, timeout configuration, SSL/TLS issues, webhook URL problems
   (test vs production), rate limiting, queue mode connection issues
   (Redis), database connection failures, and retry strategies.
-  Keywords: n8n, connection, API, timeout, SSL, credential, Redis.
+  Keywords: n8n, connection, API, timeout, SSL, credential, Redis, API not connecting, timeout, SSL error, credential invalid, Redis down, webhook URL wrong..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

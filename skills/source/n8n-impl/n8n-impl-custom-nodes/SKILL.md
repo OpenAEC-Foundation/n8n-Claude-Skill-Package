@@ -6,7 +6,7 @@ description: >
   configuration or missing credential registration. Covers n8n-nodes-starter
   template, community node packaging, project structure, programmatic vs
   declarative node styles, testing with WorkflowTestData, and publishing to npm.
-  Keywords: n8n, custom node, community node, npm, INodeType, starter template.
+  Keywords: n8n, custom node, community node, npm, INodeType, starter template, build custom node, create node, npm package, community node, extend n8n..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

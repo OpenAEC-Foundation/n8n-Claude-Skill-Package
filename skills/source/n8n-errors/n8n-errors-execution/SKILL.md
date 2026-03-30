@@ -6,7 +6,7 @@ description: >
   handling patterns. Covers node failures, timeout handling,
   continueOnFail pattern, Error Trigger node, error workflows, retry on
   fail configuration, Stop And Error node, and execution data inspection.
-  Keywords: n8n, error, execution, retry, timeout, failure, recovery.
+  Keywords: n8n, error, execution, retry, timeout, failure, recovery, debug, test execution, step by step, why did it fail, workflow stopped, node error, retry failed..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

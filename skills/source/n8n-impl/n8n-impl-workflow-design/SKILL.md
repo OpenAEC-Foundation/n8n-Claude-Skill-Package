@@ -7,7 +7,7 @@ description: >
   node), Error Trigger node, retry logic, branching (IF/Switch nodes), merge
   patterns (Merge node modes), loop patterns (Loop Over Items), wait/webhook
   resume, scheduling patterns, and Stop And Error node.
-  Keywords: n8n, workflow design, error handling, sub-workflow, merge, branching.
+  Keywords: n8n, workflow design, error handling, sub-workflow, merge, branching, loop, iterate, for each, wait for approval, pause workflow, branching, sub-workflow, error handling..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

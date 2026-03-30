@@ -7,7 +7,7 @@ description: >
   format, INode configuration, IConnections 3-level nesting (node name to
   connection type to output index to targets), NodeConnectionTypes (main + 12
   AI types), node parameter formats, and workflow settings.
-  Keywords: n8n, workflow JSON, IWorkflowBase, INode, IConnections,
+  Keywords: n8n, workflow JSON, IWorkflowBase, INode, IConnections,, import workflow, export workflow, workflow template, JSON format, workflow backup.
   NodeConnectionTypes, workflow templates, import, export.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."

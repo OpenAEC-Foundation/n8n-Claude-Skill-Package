@@ -7,7 +7,7 @@ description: >
   $node, $workflow, $execution, $env, $vars, $now, $today), JMESPath queries
   ($jmespath), paired items, static workflow data ($getWorkflowStaticData),
   utility functions ($ifEmpty), and expression context rules.
-  Keywords: n8n, expressions, $json, $input, $node, JMESPath, $env, $vars,
+  Keywords: n8n, expressions, $json, $input, $node, JMESPath, $env, $vars,, access data, reference previous node, dynamic value, variable syntax, how to get field value.
   paired items, $getWorkflowStaticData.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."

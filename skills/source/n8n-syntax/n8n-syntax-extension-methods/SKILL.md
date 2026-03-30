@@ -8,7 +8,7 @@ description: >
   .removeDuplicates, .chunk, .smartJoin), 13 number methods, 12 object methods
   (.compact, .keepFieldsContaining), 3 boolean methods, 25+ DateTime/Luxon
   methods (.plus, .minus, .format, .diffTo), and 7 BinaryFile properties.
-  Keywords: n8n, extension methods, string, array, DateTime, Luxon, pluck,
+  Keywords: n8n, extension methods, string, array, DateTime, Luxon, pluck,, transform data, rename field, filter items, format date, remove duplicates, extract email.
   extractEmail, removeDuplicates, binary file.
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."

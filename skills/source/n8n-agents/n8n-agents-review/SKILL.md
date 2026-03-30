@@ -7,7 +7,7 @@ description: >
   workflow JSON structure, node configuration, connection wiring,
   expression syntax, credential setup, error handling patterns,
   deployment configuration, and known anti-patterns.
-  Keywords: n8n, review, validation, workflow, audit, anti-pattern.
+  Keywords: n8n, review, validation, workflow, audit, anti-pattern, check my workflow, validate before deploy, find mistakes, workflow audit..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:

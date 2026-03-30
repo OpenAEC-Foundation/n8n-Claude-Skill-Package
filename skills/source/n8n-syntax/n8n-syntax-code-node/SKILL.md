@@ -6,7 +6,7 @@ description: >
   modules (fs, http). Covers runOnceForAllItems vs runOnceForEachItem execution,
   available variables ($input, $json, items), binary data handling, built-in
   modules, $() node access, Python _ prefix convention, and restrictions.
-  Keywords: n8n, Code node, JavaScript, Python, $input, $json, items.
+  Keywords: n8n, Code node, JavaScript, Python, $input, $json, items, write code in n8n, JavaScript, Python, custom logic, transform items, Code node example..
 license: MIT
 compatibility: "Designed for Claude Code. Requires n8n v1.x."
 metadata:
