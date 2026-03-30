@@ -1,0 +1,42 @@
+{
+  "name": "@openaec/n8n-claude-skill-package",
+  "version": "1.0.0",
+  "description": "21 deterministic Claude AI skills for n8n v1.x workflow automation",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenAEC-Foundation/n8n-Claude-Skill-Package"
+  },
+  "keywords": [
+    "agent-skills",
+    "agentskills",
+    "claude-skills",
+    "n8n",
+    "workflow-automation"
+  ],
+  "agents": {
+    "skills": [
+      { "name": "n8n-agents-project-scaffolder", "path": "./skills/source/n8n-agents/n8n-agents-project-scaffolder" },
+      { "name": "n8n-agents-review", "path": "./skills/source/n8n-agents/n8n-agents-review" },
+      { "name": "n8n-core-api", "path": "./skills/source/n8n-core/n8n-core-api" },
+      { "name": "n8n-core-architecture", "path": "./skills/source/n8n-core/n8n-core-architecture" },
+      { "name": "n8n-errors-connection", "path": "./skills/source/n8n-errors/n8n-errors-connection" },
+      { "name": "n8n-errors-execution", "path": "./skills/source/n8n-errors/n8n-errors-execution" },
+      { "name": "n8n-errors-expressions", "path": "./skills/source/n8n-errors/n8n-errors-expressions" },
+      { "name": "n8n-impl-custom-nodes", "path": "./skills/source/n8n-impl/n8n-impl-custom-nodes" },
+      { "name": "n8n-impl-deployment", "path": "./skills/source/n8n-impl/n8n-impl-deployment" },
+      { "name": "n8n-impl-integrations", "path": "./skills/source/n8n-impl/n8n-impl-integrations" },
+      { "name": "n8n-impl-security", "path": "./skills/source/n8n-impl/n8n-impl-security" },
+      { "name": "n8n-impl-webhooks", "path": "./skills/source/n8n-impl/n8n-impl-webhooks" },
+      { "name": "n8n-impl-workflow-design", "path": "./skills/source/n8n-impl/n8n-impl-workflow-design" },
+      { "name": "n8n-syntax-ai-nodes", "path": "./skills/source/n8n-syntax/n8n-syntax-ai-nodes" },
+      { "name": "n8n-syntax-code-node", "path": "./skills/source/n8n-syntax/n8n-syntax-code-node" },
+      { "name": "n8n-syntax-credentials", "path": "./skills/source/n8n-syntax/n8n-syntax-credentials" },
+      { "name": "n8n-syntax-expressions", "path": "./skills/source/n8n-syntax/n8n-syntax-expressions" },
+      { "name": "n8n-syntax-extension-methods", "path": "./skills/source/n8n-syntax/n8n-syntax-extension-methods" },
+      { "name": "n8n-syntax-node-types", "path": "./skills/source/n8n-syntax/n8n-syntax-node-types" },
+      { "name": "n8n-syntax-trigger-nodes", "path": "./skills/source/n8n-syntax/n8n-syntax-trigger-nodes" },
+      { "name": "n8n-syntax-workflow-json", "path": "./skills/source/n8n-syntax/n8n-syntax-workflow-json" }
+    ]
+  }
+}

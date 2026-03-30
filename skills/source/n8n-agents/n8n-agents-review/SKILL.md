@@ -19,7 +19,7 @@ metadata:
 
 > Run this checklist against ANY n8n workflow JSON, custom node code, or deployment configuration to catch errors before they reach production.
 
-## Quick Reference — Review Areas
+## Quick Reference: Review Areas
 
 | Area | Critical Checks | Reference |
 |------|----------------|-----------|
@@ -36,7 +36,7 @@ metadata:
 
 ---
 
-## Decision Tree — Review Workflow
+## Decision Tree: Review Workflow
 
 ```
 START: What are you reviewing?
